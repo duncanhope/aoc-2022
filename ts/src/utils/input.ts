@@ -1,15 +1,8 @@
-import { readFile } from "fs";
+import { readFile } from "fs/promises";
 
-export async function readInput(path: string): Promise<string> {
-  let content = "";
-  readFile(path, (err, data) => {
-    if (err) {
-      console.error(err);
-    } else {
-      content = data.toString();
-    }
-  });
-  return content;
+export async function readInput(path: string) {
+  let content = await readFile(path);
+  return content.toString();
 }
 
 export function splitChar(input: string) {

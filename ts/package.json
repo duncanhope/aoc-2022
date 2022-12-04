@@ -11,9 +11,7 @@
   "license": "ISC",
   "type": "module",
   "devDependencies": {
-    "@tsconfig/node18": "^1.0.1",
     "@types/node": "^18.11.10",
-    "@types/typescript": "^2.0.0",
     "typescript": "^4.9.3"
   }
 }
